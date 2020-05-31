@@ -3,21 +3,24 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
+        <link href="/css/reset.css" rel="stylesheet" type="text/css">
         <link href="style.css" rel="stylesheet" type="text/css">
         <title>TaHa</title>
-        <script type="text/javascript" src="dokme.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </head>
      <header>
          <div class="sexy">
              <span class="dokme" onclick="openNav()">&#9776;</span>
-             <img src="logo.png" alt="Logo" class="Logo">
+             <img class="Logo" src="logo.png" alt="Logo">
          </div>
          <div id="mySidenav" class="sidenav">
              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-             <a href="#">خرید</a>
-             <a href="#">محصولات</a>
-             <a href="#">ورود</a>
-             <a href="#">تماس با ما</a>
+             <ul>
+                 <li><a href="#">خرید</a></li>
+                 <li><a href="#">محصولات</a></li>
+                 <li><a href="#">ورود</a></li>
+                 <li><a href="#">تماس با ما</a></li>
+             </ul>
          </div>
      </header>
     <body>
@@ -57,7 +60,7 @@
             </ul>
         </div>
         <div class="New-Crop">محصولات جدید</div>
-        <div class="Menu-Scroll">
+        <div id="Menu-Scroll">
             <div class="Kategory-Slide">
                 <img alt="aks-category" class="Kategory-Img" src="http://gift-group.ir//Upload/localhost/38086/56567-6_9e8c4bcb_size(400x400).jpg">
                 <div class="N-Kala">ساک طرح پر طلاکوب بزرگ</div>
@@ -124,31 +127,44 @@
                 <div class="horizontalProductCaptionPrice number-persian" style="direction: rtl">
                     <span class="price-color">1,068,000</span> ریال </div>
             </div>
+            <div class="Kategory-Slide">
+                <img alt="aks-category" class="Kategory-Img" src="http://s13.picofile.com/file/8398748742/737902_gorgerous_muscle_car_wallpapers_3840x2160.jpg">
+                <div class="N-Kala"> طلاکوب بزرگ</div>
+                <div class="horizontalProductCaptionPrice number-persian" style="direction: rtl">
+                    <span class="price-color">1,068,000</span> ریال </div>
+            </div>
+            <div class="Kategory-Slide">
+                <img alt="aks-category" class="Kategory-Img" src="http://s13.picofile.com/file/8398748742/737902_gorgerous_muscle_car_wallpapers_3840x2160.jpg">
+                <div class="N-Kala"> طلاکوب بزرگ</div>
+                <div class="horizontalProductCaptionPrice number-persian" style="direction: rtl">
+                    <span class="price-color">1,068,000</span> ریال </div>
+            </div>
+            <div class="Kategory-Slide">
+                <img alt="aks-category" class="Kategory-Img" src="http://s13.picofile.com/file/8398748742/737902_gorgerous_muscle_car_wallpapers_3840x2160.jpg">
+                <div class="N-Kala"> طلاکوب بزرگ</div>
+                <div class="horizontalProductCaptionPrice number-persian" style="direction: rtl">
+                    <span class="price-color">1,068,000</span> ریال </div>
+            </div>
+            <div class="Kategory-Slide">
+                <img alt="aks-category" class="Kategory-Img" src="http://s13.picofile.com/file/8398748742/737902_gorgerous_muscle_car_wallpapers_3840x2160.jpg">
+                <div class="N-Kala"> طلاکوب بزرگ</div>
+                <div class="horizontalProductCaptionPrice number-persian" style="direction: rtl">
+                    <span class="price-color">1,068,000</span> ریال </div>
+            </div>
+            <div class="Kategory-Slide">
+                <img alt="aks-category" class="Kategory-Img" src="http://s13.picofile.com/file/8398748742/737902_gorgerous_muscle_car_wallpapers_3840x2160.jpg">
+                <div class="N-Kala"> طلاکوب بزرگ</div>
+                <div class="horizontalProductCaptionPrice number-persian" style="direction: rtl">
+                    <span class="price-color">1,068,000</span> ریال </div>
+            </div>
         </div>
-        <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-            function showSlides(n) {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {slideIndex = 1}
-                if (n < 1) {slideIndex = slides.length}
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex-1].style.display = "block";
-                dots[slideIndex-1].className += " active";
-            }
-        </script>
+    <script>
+        window.onload = function() {
+            startUp();
+        }
+    </script>
     </body>
+    <footer id="footer">
+        <p> © 2020-2021 Copyright</p>
+    </footer>
 </html>
