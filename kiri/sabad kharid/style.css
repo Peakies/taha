@@ -1,0 +1,214 @@
+body {
+    background: #1e2f3e;
+    font-family: "Lato", sans-serif;
+    direction: rtl;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: red ;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: darkred;
+}
+
+.sexy{
+    background-color: #111921;
+    z-index: 2;
+    width: 100%;
+}
+
+.Logo{
+    width: 35px;
+    height: 35px;
+    text-align: left;
+    margin-right: auto;
+    margin-left: 0;
+    float: left;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.dokme {
+    color: white;
+    border:solid;
+    border-width: 1px;
+    float: right;
+    top: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #b9944e;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+
+
+.List-Kalaha{
+    font-size: 20px;
+    text-align: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.List-Kalaha ul {
+    list-style: none;
+    display: block;
+    padding: 4px;
+    margin: 4px;
+}
+
+.List-Kalaha ul li {
+    display: inline-block;
+    background-color: #ffba65;
+    margin: 10px 2px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    border: 1px solid #272727;
+}
+
+.List-Kalaha ul li a {
+    color: #3d3424;
+    text-decoration: none;
+}
+
+.List-Kalaha ul li:hover a{
+    color:black;
+    display:block;
+}
+
+.List-Kalaha li:hover{
+    background-color:#b9944e;
+    padding: -1px;
+    color: #000;
+    border: 1px solid;
+}
+
+#S-myImg{
+    float: right;
+    padding-right: 10px;
+    width: 100px;
+    height: 100px;
+}
+.S-List {
+    color:white;
+    
+    float: right;
+    margin-top: 12px;
+    
+}
+.S-List ul li p{
+    font-size: 23px;
+    margin-right: 8px;
+}
+.S-List ul li span{
+    font-size: 22px;
+    margin-right:8px;
+}
+
+.Delete-List{
+    font-size: 23px;
+}
+.jam-kharid{
+    border: solid;
+    border-width: 1px;
+    background-color: grey;
+    margin-top:15px;
+    float: right;
+    color: black;
+}
+.prdakht{
+
+    background-color: #4CAF50;
+    position: absolute;
+    margin-top: 80px;
+    border: solid;
+    border-color: transparent;
+    padding: 15px 80px 15px 80px;
+}
+.prdakht ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin:0 auto;
+    background: #111921;
+    width: 100%;
+    height: 80px;
+}
+
+#footer p {
+    color: #FDFDFD;
+    display: inline;
+    text-align: left;
+}
+
+#footer p > a {
+    color: #FDFDFD;
+    display: inline-block;
+    text-align: right;
+    float: right;
+}
+
+#footer
+@viewport{
+    zoom: 1.0;
+}
+@-ms-viewport {
+    zoom: 1.0;
+}

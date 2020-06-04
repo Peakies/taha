@@ -9,6 +9,19 @@ body {
     overflow-x: hidden;
 }
 
+::-webkit-scrollbar{
+    width: 20px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: red ;
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: darkred;
+}
+
 .sexy{
     background-color: #f5363E;
     z-index: 2;
@@ -30,7 +43,7 @@ body {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: black;
+    background-color: darkgrey;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -39,21 +52,22 @@ body {
     float: right;
     top: 0;
     padding-right: 10px;
+    padding-left: 10px;
     font-size:30px;
-    cursor:pointer
+    cursor:pointer;
 }
 
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: black;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: whitesmoke;
 }
 
 .sidenav .closebtn {
@@ -176,6 +190,7 @@ body {
 }
 
 .List-Kalaha{
+    font-size: 20px;
     text-align: right;
 }
 
@@ -217,20 +232,6 @@ body {
     border: 1px solid #f5363E;
 }
 
-.btn-kala {
-    font-size: 18px;
-    margin-top: 18px;
-    border-radius: 20px;
-    outline: none;
-    padding: 6px 16px;
-    background-color: #f5363E;
-    color: whitesmoke;
-    cursor: pointer;
-}
-
-.btn-kala:hover {
-    background-color: grey;
-}
 .New-Crop{
     text-align: right;
     margin-top: 8px;
@@ -258,6 +259,18 @@ body {
 }
 
 #Menu-Scroll{
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin-right: auto;
+}
+#Menu-Scroll2{
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    margin-right: auto;
+}
+#Menu-Scroll3{
     width: 100%;
     white-space: nowrap;
     overflow-x: auto;
